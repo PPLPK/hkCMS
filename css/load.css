@@ -1,0 +1,349 @@
+/*公共样式*/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+/*媒体查询*/
+@media (min-width: 768px){
+	.container{
+		width: 750px;
+	}
+}
+@media (min-width: 992px){
+	.container{
+		width: 970px;
+	}
+}
+@media (min-width: 1200px){
+	.container{
+		width: 1170px;
+	}
+}
+
+body{
+	background-color: #fff;
+}
+
+/*头部样式*/
+.head{
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.head>.nav>ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+.head>.nav li{
+	display: block;
+	text-align: center;
+}
+.head>.nav li>a{
+	font-size:18px;
+	color: #535353;
+}
+.head>.nav .active{
+	border-bottom: 2px solid #dc5510;
+}
+.head>.nav .active>a{
+	color: #dc5510;
+}
+.head>.login{
+	padding: 5px 10px;
+	background-color: #dc5510;
+	border-radius: 10px;
+	margin-left: 100px;
+}
+.head>.login>a{
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+	color: #fff;
+}
+
+/*按钮样式*/
+.butt{
+	margin-top: 90px;
+}
+.butt>.left{
+	display: flex;
+}
+.butt>.left>.divSize{
+	padding: 8px 24px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.butt>.left>.load{
+	background-color: #dc5510;
+	margin-right: 2px; 
+}
+.butt>.left>.load>a{
+	color: #fff;
+}
+.butt>.left>.website{
+	background-color: #ededed;
+}
+.butt>.left>.website>a{
+	color: #535353;
+}
+.butt>.left>.divSize>a{
+	font-size: 16px;
+}
+
+.butt>.right{
+	display: flex;
+}
+.butt>.right>.install{
+	padding: 5px 8px;
+	border-radius: 4px;
+	background-color: #707070;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.butt>.right>.install>a{
+	font-size: 14px;
+	color: #fff;
+}
+.butt>.right>.recomm{
+	padding: 5px 6px;
+	border-radius: 4px;
+	border: 1px solid #707070;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 2px;
+}
+.butt>.right>.recomm>a{
+	font-size: 14px;
+	color: #707070;
+}
+
+/*中间内容区域的样式*/
+.contentDiv{
+	/*padding: 30px 0;*/
+	background-color: #ededed;
+	margin-top: 70px;
+	border: 1px solid #ededed;
+	
+
+}
+	/*中心内容区域左边部分的样式*/
+.content{
+	padding-bottom: 50px;
+}
+.content >.left{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.content .divMargin{
+	margin-left: 36px;
+	font-size: 16px;
+	color: #535353;
+	margin-top: 30px;
+}
+
+.content .five>.tableDiv{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	padding: 0;
+}
+.content>.left>.five>.tableDiv>.trDiv{
+	display:flex;
+	margin: 0;
+}
+.content .five>.tableDiv>.trDiv>.left{
+	text-align: center;
+	padding: 20px 50px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+.content .five>.tableDiv>.trDiv>.leftFrist{
+	border-bottom: 1px solid black;
+}
+.content .five>.tableDiv>.trDiv>.right{
+	margin: 0;
+	text-align: center;
+	padding: 20px 100px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.content .five>.tableDiv>.trDiv>.rightLast{
+	border-bottom: 1px solid black;
+}
+
+.content .five>.pMargin{
+	margin-top: 50px;
+	margin-bottom:50px; 
+
+}
+
+	/*中心内容区域右边部分的样式*/
+/*.content .right{
+	margin-top: 45px;
+	display: flex;
+	justify-content: center;
+}
+.content .right>div{
+	margin-left: 16px;
+}
+.content .right>div>span{
+	font-size: 12px;
+	color: #535353;
+}*/
+
+
+
+/*下面的“+”里面的内容样式*/
+/*左边*/
+.divWhite,.divBlack{
+	/*height: 70px;*/
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+}
+.divWhite{
+	background-color: #fff;
+}
+.divWhite>.title{
+	display: flex;
+	align-items: center;
+}
+.divBlack>.title{
+	display: flex;
+	align-items: center;
+}
+.divWhite>.title>img{
+	margin-right: 20px;
+}
+.divBlack>.title>img{
+	margin-right: 20px;
+}
+.divWhite>.title>span{
+	font-size: 16px;
+	color: #dc5510;
+	font-weight: bold;
+}
+.divBlack>.title>span{
+	font-size: 16px;
+	color: #dc5510;
+	font-weight: bold;
+}
+/*右边*/
+.divWhite>.rightComm{
+	display: flex;
+	justify-content: center;
+}
+.divBlack>.rightComm{
+	display: flex;
+	justify-content: center;
+}
+.divWhite>.rightComm>div{
+	margin-left: 16px;
+}
+.divWhite>.rightComm>div>span{
+	font-size: 12px;
+	color: #535353;
+}
+.divBlack>.rightComm>div{
+	margin-left: 16px;
+}
+.divBlack>.rightComm>div>span{
+	font-size: 12px;
+	color: #535353;
+}
+
+/*中间部分分页的按钮的样式*/
+.contentBott{
+	/*height: 90px;*/
+	padding: 30px 0;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+}
+.contentBott>.left{
+	display: flex;
+	justify-content: space-around;
+}
+.contentBott>.left>p{
+	font-size: 16px;
+	color: #535353;
+}
+.contentBott>.left>img{
+	margin-top: 4px;
+}
+
+
+
+
+/*底部样式*/
+.footer{
+	margin-top: 120px;
+}
+.footer>.footerWeb{
+	background-color: #fafafa;
+}
+.footer>.footerWeb .borderDiv{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f3f5f8;
+}
+.footer>.footerWeb .footerWebDiv{
+	padding-top: 40px;
+	text-align: center;
+}
+.footer>.footerWeb .footerWebDiv>p{
+	font-size: 12px;
+	color: #aca6a5;
+}
+.footer>.footerWeb .footerWebDiv>.title{
+	font-size: 16px;
+	color: #546168;
+}
+.footer>.footerWeb .right{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer>.footerWeb .right>p{
+	color: #c2c1c0;
+	line-height: 8px;
+}
+.footer>.footerWeb .right>img{
+	margin-bottom: 16px;
+}
+.footer>.footerWeb .right>.pDiv{
+	width: 25%;
+	padding: 10px;
+	background-color: #dc5510;
+	color: #fff;
+}
+/*底部链接样式*/
+.footer>.footerWeb .footerLink{
+	margin-top: 30px;
+	text-align: center;
+}
+.footer>.footerWeb .footerLink span{
+	font-size: 12px;
+	color: #6d8294;
+	line-height: 26px;
+}
+/*底部的最下面的那行字的样式*/
+.footer>.footerBott{
+	background-color: #dc5510;
+	padding: 26px 0;
+}
